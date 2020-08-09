@@ -1,0 +1,304 @@
+.player-detail-container {
+    width: 39.82%;
+    padding: 60px 0;
+    margin: 0 auto;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #F7F7F7;
+    border-radius: 30px;
+    opacity: 1;
+
+    a { 
+        padding: 25px 0;
+        margin-top: 35px;
+        text-align: center;
+        display: block;
+        background: #4B7BFF 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 6px #00000029;
+        border: 1px solid #70707026;
+        border-radius: 20px;
+        opacity: 1;
+        font-family: PoppinsMedium;
+        font-size: 32px;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .wrapper {
+        width: 90%;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+
+        padding-bottom: 35px;
+        border-bottom: 1px solid gray;
+        li {
+            padding: 34px 0;
+            padding-left: 15px;
+            padding-bottom: 20px;
+            margin-bottom: 10px;
+            list-style: none;
+            border: 1px solid #70707026;
+            border-radius: 15px;
+            opacity: 1;
+            display: flex;
+            position: relative;
+
+            .avatar {
+                box-sizing: border-box;
+                display: block;
+                position: absolute;
+                top: 10px;
+                height: 79.72%;
+                width: 16.17%;;
+                border-radius: 50%;
+                background-color: transparent;
+                border: 10px solid #37AC5D;
+               
+                @media (max-width: 1680px) { 
+                    width: 90px;
+                    height: 90px;
+                }
+
+                img {
+                    height: 75%;
+                    width: 75%;
+                    margin: 15px;
+
+                    @media (max-width: 1680px) { 
+                     
+                        position: absolute;
+                        right: -6px;
+                        top: -4px;
+                    }
+                    
+                }
+            }
+
+            .player_detail-input {
+                width: 100%;
+                margin-left: 10%;
+                border-bottom: 1px solid gray;
+                margin-right: 20px;
+                display: flex;
+                flex-direction: column;
+
+
+                span {
+                    // height: 61px;
+                    margin-left: 60px;
+
+                    &:first-child {
+                        text-align: left;                      
+                        letter-spacing: 0px;
+                        color: #424242;
+                        opacity: 0.56;
+                        font-family: PoppinsRegular;
+                        font-size: 18px;
+                        line-height: 27px;
+                    }
+
+                    &:nth-child(2) {
+                        height: 30px;
+                        text-align: left;                        
+                        letter-spacing: 0px;
+                        color: #424242;
+                        opacity: 1;
+                        font-family: PoppinsRegular;
+                        font-size: 28px;
+                        line-height: 42px;
+                        margin-top: 5px;
+                    }
+                }
+            }
+
+            &:first-child {
+                background: #DCF6E4 0% 0% no-repeat padding-box;
+            }
+
+            &:nth-child(2) {
+                background: #F6EFD5 0% 0% no-repeat padding-box;            
+            }
+
+            &:nth-child(3) {
+                background: #EFF3FF 0% 0% no-repeat padding-box;
+            }
+
+            &:nth-child(4) {
+                background: #EFF3FF 0% 0% no-repeat padding-box;
+            }
+
+            
+        }
+    }
+}
+
+.ReactModalPortal {
+
+    
+    
+    .ReactModal__Overlay {
+        background: #000000 0% 0% no-repeat padding-box !important;
+       background-color: rgba(0, 0, 0, 0.65)!important;
+        // opacity: 0.65!important;
+
+        &:first-child    {
+            // display: none!important;
+            .ReactModal__Content {
+                // display: none!important;
+                margin-top: -300px!important;
+          }
+        }
+    
+        &:last-child {
+            .ReactModal__Content {
+                // margin-top: -350px!important;
+          }
+        }
+    }
+
+    .ReactModal__Content {
+        box-sizing:border-box!important;
+        width: 31.8%!important;
+        // position: absolute!important;
+        top: 50%!important;
+        left: 50%!important;
+        margin-left: -300px!important;
+        background: #FFFFFF 0% 0% no-repeat padding-box !important;
+        box-shadow: 0px 3px 6px #00000029!important;
+        border: 1px solid #F7F7F7!important;
+        border-radius: 30px!important;
+        opacity: 1!important;
+        right: unset!important;
+        bottom: unset!important;
+        margin-top: -400px!important;
+        padding: 20px 25px!important;
+
+
+        
+
+    }   
+
+    form {
+        h2 {
+            text-align: center;
+            font: Medium 36px/55px Poppins;
+            letter-spacing: 0px;
+            color: #424242;
+            opacity: 1;
+            font-family: PoppinsMedium;
+            font-size: 36px;
+        }
+        
+        .uname {
+            input[type="text"] {
+                box-sizing: border-box;
+                width: 100%;
+                padding: 20px 0;
+                padding-left: 10px;
+                border-radius: 15px;
+                margin-top: 5px;
+                margin-bottom: 40px;
+                border: 1px solid #e4dfdf;
+                outline: none;
+                transition: all .5s ease-out;
+                font-size: 24px;
+            }
+        
+            input[type="submit"] {
+                width: 100%;
+                padding: 17px 0;
+                background: #4B7BFF;
+                text-align: center;
+                letter-spacing: 0px;
+                color: #FFFFFF;
+                opacity: 1;
+                font-size: 32px;
+                font-family: PoppinsMedium;
+                background: #4B7BFF 0% 0% no-repeat padding-box;
+                box-shadow: 0px 3px 6px #00000029;
+                border: 1px solid #70707026;
+                border-radius: 20px;
+                opacity: 1;
+
+            }
+        }
+
+        .game-count-container {
+            padding: 0 26px;
+            padding-bottom: 34px;
+            border-bottom: 1px solid gray;
+            .radio {
+                padding: 20px 0;
+                padding-left: 28px;
+                margin-bottom: 10px;
+                
+                background: #EFF3FF 0% 0% no-repeat padding-box;
+                border: 1px solid #70707026;
+                border-radius: 15px;
+                opacity: 1;
+
+                label {
+                    text-align: left;
+                    // font: Regular 28px/42px Poppins;
+                    letter-spacing: 0px;
+                    color: #424242;
+                    opacity: 1;
+                    font-size: 28px;
+                    font-family: PoppinsRegular;
+                    
+                    span {
+                        margin-left: 20px;
+                    }
+                }
+
+                input[type="radio"] {
+                    width: 30px;
+                    height: 30px;                    
+                    opacity: 1;
+                    background: #424242 0% 0% no-repeat padding-box;
+                }
+            }
+        }
+
+        .radio-cta {
+             padding-bottom: 14px;
+             padding-top: 34px;
+            display: flex;
+            justify-content: space-between;
+
+            button {
+                font-size: 32px;
+                font-family: PoppinsMedium;
+                line-height: 48px;
+                padding: 18px 67px;
+
+                &:first-child {
+                    background: #FFFFFF 0% 0% no-repeat padding-box;
+                    box-shadow: 0px 3px 6px #00000029;
+                    border: 1px solid #4B7BFF26;
+                    border-radius: 20px;
+                    opacity: 1;
+                    text-align: center;
+                    letter-spacing: 0px;
+                    color: #4B7BFF;
+                    opacity: 1;
+                }
+
+                &:nth-child(2) {
+                    background: #4B7BFF 0% 0% no-repeat padding-box;
+                    box-shadow: 0px 3px 6px #00000029;
+                    border: 1px solid #70707026;
+                    border-radius: 20px;
+                    opacity: 1;
+                    text-align: center;
+                    letter-spacing: 0px;
+                    color: #FFFFFF;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
