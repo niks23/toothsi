@@ -17,7 +17,11 @@ const Cell = ({ value, columnIndex, play }) => {
     return (      
         <div className="cell" onClick={() => {play(columnIndex)}}>
           <div className={color}>
-            <img src={imgSrc}></img></div>
+            <img src={imgSrc}></img>
+            </div>
+          <div className="black">
+            
+          </div>
         </div>      
     );
 };

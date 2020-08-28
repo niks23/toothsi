@@ -17,6 +17,7 @@ import Avatar1  from '../../assets/images/avatar01.png';
 import Avatar2  from '../../assets/images/avatar02.png';
 import Run  from '../../assets/images/run.png';
 import Winner  from '../../assets/images/winner.png';
+import { FaArrowLeft } from 'react-icons/fa';
 
 class  PlayerDetail extends Component {
     // render() {
@@ -138,8 +139,13 @@ class  PlayerDetail extends Component {
         });
     }
         render () {
-            return (            
-                <div className="player-detail-container">            
+            return ( 
+                <>
+                    <div className="back">    
+                    <Link to="/"> <FaArrowLeft /></Link>
+                        <h2 className="head">Two Players Game</h2>
+                    </div>
+                    <div className="player-detail-container">            
                    <div className="wrapper">
                         <ul className="player-detail"> 
                             <li>
@@ -157,7 +163,7 @@ class  PlayerDetail extends Component {
                                 </div>
                             </li>
                             <li>
-                            <span className="avatar"><img src={Run}></img></span>                                
+                            <span className="avatar"><img src={Winner}></img></span>                                
                             
                                 <div className="player_detail-input" onClick={() => this.toggleModal('game-count')}>
                                     <span>Number of game</span>
@@ -166,7 +172,7 @@ class  PlayerDetail extends Component {
                             </li>
                             <li className="player_detail-input" onClick={() =>this.toggleModal('player-turn')}>
                                 
-                            <span className="avatar"><img src={Winner}></img></span>                                                                  
+                            <span className="avatar"><img src={Run}></img></span>                                                                  
                                 
                                 
                                 <div className="player_detail-input">
@@ -244,7 +250,7 @@ class  PlayerDetail extends Component {
                         </div>
                         <div className="radio-cta">
                             <button>Cancel</button>
-                            <button>Submit</button>
+                            <button>Ok</button>
                         </div>
                     </form>
                 </GameCountModal>
@@ -286,7 +292,7 @@ class  PlayerDetail extends Component {
                         </div>
                         <div className="radio-cta">
                             <button>Cancel</button>
-                            <button>Submit</button>
+                            <button>OK</button>
                         </div>
                     </form>
                 </PlayerTurnModal>
@@ -294,6 +300,7 @@ class  PlayerDetail extends Component {
     
                    
                 </div>
+                </>
             )
         }
 
